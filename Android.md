@@ -1,4 +1,4 @@
-# Andriod.mk
+# Android.mk
 
 #### if语句集
 
