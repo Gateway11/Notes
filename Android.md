@@ -1,6 +1,6 @@
 # Andriod.mk
 
-#### if语句集
+### if语句集
 
 	ifeq (a, b)
 		。。。 。。。
@@ -14,7 +14,7 @@
 		。。。 。。。
 	endif
 	
-#### 宏定义
+### 宏定义
 
 	在Boardconfig.mk中添加一个IS_FLAG := true
 	Boardconfig.mk和各目录的Android.mk是相互关联的所以我们可以在Android.mk中添加一个
@@ -28,5 +28,7 @@
 	LOCAL_FINAL_PATH := /system/test  
 	LOCAL_CFLAGS += -Wno-unused-parameter -DRESOURCE_DIR="\"$(LOCAL_FINAL_PATH)\"" 
 	这样在C++ code里，可以直接使用RESOURCE_DIR，相当于c++的 #define  RESOURCE_DIR "/system/test"， '\'在Android.mk里是转义符  
+
+##### 注意：-D （必须要有这个）[参考](http://blog.csdn.net/u010748941/article/details/69504245)
   
 	 
