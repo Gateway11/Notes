@@ -114,6 +114,7 @@ volatile关键字,禁止GCC优化作修改
 	-	上一个命令执行出错，继续执行下一条命令(rm *.o)
 	@	不显示命令本身(@echo hello world)
 	.PHONY : clean
+	make -C path 进入指定目录
 
 	obj = hello.o world.o
 	app : $(obj)
