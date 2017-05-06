@@ -105,7 +105,7 @@ volatile关键字,禁止GCC优化作修改
 
 目标可以是程序生成的文件名，也可以是所采用的活动名，比如（clean）。先决条件是一个或多个文件名。命令是make要执行的操作。一条规则可以有多个命令，每个命令自成一行（table键开头）。
 
-###### 自变量(make -p > Makefile)
+###### 自变量(make -p > ![Makefile](image/Makefile))
 
 	$^	表示规则的所有先决条件，包括它们所处目录的名称。
 	$<	表示规则中的第一个先决条件
@@ -114,10 +114,17 @@ volatile关键字,禁止GCC优化作修改
 	-	上一个命令执行出错，继续执行下一条命令(rm *.o)
 	@	不显示命令本身(@echo hello world)
 	.PHONY : clean
+
+	obj = hello.o world.o
+	app : $(obj)
+		gcc $^ -o $@
+	%.o : %.c
+		gcc -c $^ -o $@
+
+###### 函数
+
+[](image/Makefile.jpeg)
 	
-	foo.o : foo.c defs.h hack.h
-		cc -c $(CFLAGS) $< -0 $@
-		
 ###### 隐式规则(不常用)
 
 双后缀是用一对后缀定义的，源后缀和目标后缀
