@@ -121,7 +121,7 @@ volatile关键字,禁止GCC优化作修改
 	%.o : %.c
 		gcc -c $^ -o $@
 
-##### ([Makefile默认函数](assets/Makefile.jpeg))
+##### ([Makefile函数](assets/Makefile.jpeg))
 	
 ##### 隐式规则(不常用)
 
