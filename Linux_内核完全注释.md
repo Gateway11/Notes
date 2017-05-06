@@ -105,7 +105,7 @@ volatile关键字,禁止GCC优化作修改
 
 目标可以是程序生成的文件名，也可以是所采用的活动名，比如（clean）。先决条件是一个或多个文件名。命令是make要执行的操作。一条规则可以有多个命令，每个命令自成一行（table键开头）。
 
-##### 自变量(make -p > ([Makefile](assets/Makefile)))
+##### 自变量(make -p > [Makefile](assets/Makefile))
 
 	$^	表示规则的所有先决条件，包括它们所处目录的名称。
 	$<	表示规则中的第一个先决条件
@@ -121,7 +121,7 @@ volatile关键字,禁止GCC优化作修改
 	%.o : %.c
 		gcc -c $^ -o $@
 
-##### ([Makefile函数](assets/Makefile.jpeg))
+##### [Makefile函数调用](assets/Makefile.jpeg)
 	
 ##### 隐式规则(不常用)
 
