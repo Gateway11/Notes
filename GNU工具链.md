@@ -1,4 +1,4 @@
-### GCC工具链
+### GNU工具链
 	
 	x86			sudo apt-get install gcc g++ gcc-doc
 	arm			sudo apt-get install gcc-arm-linux-gnueabi
