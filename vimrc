@@ -1,5 +1,6 @@
 syntax on
 set mouse-=a
+hi ModeMsg ctermfg=White
 set ts=4
 set expandtab
 set shiftwidth=4
