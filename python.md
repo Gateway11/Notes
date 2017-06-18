@@ -1,7 +1,10 @@
+#!/usr/bin/env python
+
 #### if
 
     x = 10
     if 10 % 2 == 0 :
+        print id(x)
 
     s = "hello"
     if s == "hello" :
