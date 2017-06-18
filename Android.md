@@ -16,17 +16,16 @@ public static Intent createExplicitFromImplicitIntent(Context context,Intent imp
     return explicitIntent;
 }
 
-class MyApp extends Application {
+public class MyApp extends Application {
 
     private static MyApp instance;
                 
-    public static MyApp getInstance(){
+    public static MyApp asInstance(){
         return instance;
     }
                     
     @Override
     public void onCreate(){
-        onCreate();
         instance = this;
     }
 }
