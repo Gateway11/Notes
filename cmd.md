@@ -15,3 +15,6 @@ jdk1.8下载
     http://www.linuxfromscratch.org/blfs/view/svn/general/java.html
     xz -d ...
     tar xvf ...
+
+ make -j10 BUILDING_WITH_NINJA=false
+
