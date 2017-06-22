@@ -17,4 +17,4 @@ jdk1.8下载
     tar xvf ...
 
  make -j10 BUILDING_WITH_NINJA=false
-
+repo start master --all
