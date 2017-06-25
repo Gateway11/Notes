@@ -37,3 +37,7 @@
 #### 转义
     
     print "hello\"\"world"
+
+#### 字符串
+
+    print "I am {}, hello world".format("Kevin")
