@@ -1,0 +1,10 @@
+svc wifi enable
+wpa_cli -i wlan0 -p /data/misc/wifi/sockets list_networks
+wpa_cli -i wlan0 -p /data/misc/wifi/sockets add_network
+wpa_cli -i wlan0 -p /data/misc/wifi/sockets set_network 0 ssid '"ROKID-SHOW"'
+wpa_cli -i wlan0 -p /data/misc/wifi/sockets set_network 0 scan_ssid 1
+wpa_cli -i wlan0 -p /data/misc/wifi/sockets set_network 0 key_mgmt WPA-PSK
+wpa_cli -i wlan0 -p /data/misc/wifi/sockets set_network 0 psk '"showrokid"'
+wpa_cli -i wlan0 -p /data/misc/wifi/sockets enable_network 0
+wpa_cli -i wlan0 -p /data/misc/wifi/sockets save_config
+exit
