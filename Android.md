@@ -29,3 +29,5 @@ public class MyApp extends Application {
         instance = this;
     }
 }
+
+     android:persistent="true"
