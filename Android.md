@@ -16,6 +16,14 @@ public static Intent createExplicitFromImplicitIntent(Context context,Intent imp
     return explicitIntent;
 }
 
+android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_FOREGROUND);
+android.os.Process.setCanSelfBackground(false);
+android.os.Looper.prepareMainLooper();
+android.app.ActivityThread activityThread = android.app.ActivityThread.systemMain();
+android.content.Context mSystemContext = activityThread.getSystemContext();
+mSystemContext.setTheme(android.R.style.Theme_DeviceDefault_Light_DarkActionBar);
+mSystemContext.sendBroadcast(new android.content.Intent("intent"));
+
 public class MyApp extends Application {
 
     private static MyApp instance;
