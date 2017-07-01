@@ -78,3 +78,14 @@ __doc__                   当前文件描述
     temp = lambda x,y: x+y//相当于定于一个函数
     print temp(4,4)
 
+    map(lambda x:x**x, range(10))
+
+#### 内置函数
+    a = []
+    help(a)//显示帮助
+    dir()//列出这个文件中的所有方法名key
+    vars()//列出这个文件中的所有方法名key value
+    type(a)
+    import temp
+    reload(temp)
+    id()//显示内存地址
