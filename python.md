@@ -95,3 +95,8 @@ __doc__                   当前文件描述
     import temp
     reload(temp)
     id()//显示内存地址
+
+xrange
+enumerate
+s = 'I am {0}'
+print s.format('xxxx')
