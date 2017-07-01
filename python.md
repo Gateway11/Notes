@@ -75,9 +75,12 @@ __doc__                   当前文件描述
     res = 'True' if 1 > 3 else 'False'
 
 #### lambda表达式
-    temp = lambda x,y: x+y//相当于定于一个函数
+    temp = lambda x,y: x+y//相当于定于一个匿名函数
     print temp(4,4)
 
+    def temp(arg1):
+        return arg1 + 100
+    map(temp, [11,22,33])//map遍历这个列表，然后把每一个参数传给这个temp函数
     map(lambda x:x**x, range(10))
 
 #### 内置函数
