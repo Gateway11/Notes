@@ -61,3 +61,20 @@ __doc__                   当前文件描述
         test(key, value)
         def test(**args)
 
+    try:
+        file = open(xxxx)
+    finally:
+        file.close()
+    with open(xxxx) as f:
+    
+    yield&next
+        yield在函数执行到这一步立即返回
+        next接上上一次yidld的地方继续执行
+
+#### 三目运算
+    res = 'True' if 1 > 3 else 'False'
+
+#### lambda表达式
+    temp = lambda x,y: x+y//相当于定于一个函数
+    print temp(4,4)
+
