@@ -52,3 +52,5 @@ __doc__                   当前文件描述
 
     默认参数
     def test(arg1, arg2='xxxx', arg3='xxxx')：
+    可变参数,包装成列表(*)
+    def test(*args):
