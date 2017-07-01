@@ -41,3 +41,14 @@
 #### 字符串
 
     print "I am {}, hello world".format("Kevin")
+
+from file import demo
+__init__.py
+if __name__ == '__main__' 是否为主文件
+__file__                  当前文件路径
+__doc__                   当前文件描述
+
+#### 函数
+
+    默认参数
+    def test(arg1, arg2='xxxx', arg3='xxxx')：
