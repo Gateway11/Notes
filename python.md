@@ -80,8 +80,11 @@ __doc__                   当前文件描述
 
     def temp(arg1):
         return arg1 + 100
-    map(temp, [11,22,33])//map遍历这个列表，然后把每一个参数传给这个temp函数
-    map(lambda x:x**x, range(10))
+    print map(temp, [11,22,33])//map遍历这个列表，然后把每一个参数传给这个temp函数
+    print map(lambda x:x**x, range(10))
+    print filter(lambda x:x==1,[1,2,3])//True序列
+    print reduce(lambda x,y:x+y, [1,2,3])//累加
+
 
 #### 内置函数
     a = []
