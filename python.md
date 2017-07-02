@@ -121,3 +121,28 @@ print zip(x,y,z)以列输出
     Function()
 
     join
+
+#### 正则
+    import re
+    res = re.match(arg1,arg2,arg3)//只开头匹配,没匹配返回None
+    if res :
+        print res.group()
+    re.search(arg1,arg2,arg3)//整串匹配
+
+#### 装饰器
+    def outer(fun):
+        def wrapper(arg1)://如果原函数有参数，参数加这
+            res = fun()
+            return res //如果原函数有返回值，加这
+        return wrapper
+
+
+    
+    @outer //回了注解就可以和上面函数联系起来
+    def Func1()
+        print "func1"
+
+    @outer
+    def Func2(arg1)
+        print "func2"
+        return "asdfads"
