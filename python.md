@@ -146,3 +146,4 @@ print zip(x,y,z)以列输出
     def Func2(arg1)
         print "func2"
         return "asdfads"
+    扩展：注解传参
