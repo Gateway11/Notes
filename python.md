@@ -119,3 +119,5 @@ print zip(x,y,z)以列输出
     func = "path"//以字符形式执行函数
     Function = getattr(model, func)
     Function()
+
+    join
