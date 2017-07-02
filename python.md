@@ -100,3 +100,21 @@ xrange
 enumerate
 s = 'I am {0}'
 print s.format('xxxx')
+
+x=[1,2,3]
+y=[1,2,3]
+z=[1,2,3]
+x=[1,2,3]
+print zip(x,y,z)以列输出
+
+#### 反射
+    a= '8 * 8'
+    print eval(a)//字符串相乘
+
+    temp = 'sys'
+    model = __import__(temp)//导入字符的lib包
+    print model.path
+
+    func = "path"//以字符形式执行函数
+    Function = getattr(model, func)
+    Function()
