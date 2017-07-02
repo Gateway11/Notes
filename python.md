@@ -157,6 +157,10 @@ print zip(x,y,z)以列输出
             self.Capital = capital
             self.Leader = leader
 
+        @staticmethod
+        def Foo()://加python注解变成静态方法，还要去self参数
+            print 'xxxx'
+
     sb = Province("arg1", 'arg2', 'arg3')
     print sd.Name //访问动态字段//对象可以访问表态字段
     print Province.memo//访问静态字段
