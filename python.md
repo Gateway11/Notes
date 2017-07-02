@@ -149,7 +149,7 @@ print zip(x,y,z)以列输出
     扩展：注解传参
 
 #### Class
-    class Province:
+    class Province(object)://加括号代表继承object
         memo = 'xxxx'//这是静态字段
         def __init__(self.name, capital, leader):
             //下面全是动态字段
@@ -163,8 +163,16 @@ print zip(x,y,z)以列输出
         def Foo()://加python注解变成静态方法，还要去self参数
             print 'xxxx'
 
-        def __sha(self)://私有方法
+        def __sha(self)://两下划线,私有方法
             print "xxxx"
+
+        @property//访问私有字段//只读
+        def Thailand(self):
+            return self.__Thailand
+
+        @Thailand.setter//可改私有字段
+        def Thailand(self, value):
+            self.__Thailand = value
 
     @property//属性注解，不知道有什么用
     sb = Province("arg1", 'arg2', 'arg3')
