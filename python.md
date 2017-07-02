@@ -147,3 +147,16 @@ print zip(x,y,z)以列输出
         print "func2"
         return "asdfads"
     扩展：注解传参
+
+#### Class
+    class Province:
+        memo = 'xxxx'//这是静态字段
+        def __init__(self.name, capital, leader):
+            //下面全是动态字段
+            self.Name = name
+            self.Capital = capital
+            self.Leader = leader
+
+    sb = Province("arg1", 'arg2', 'arg3')
+    print sd.Name //访问动态字段//对象可以访问表态字段
+    print Province.memo//访问静态字段
