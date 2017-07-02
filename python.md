@@ -178,3 +178,6 @@ print zip(x,y,z)以列输出
     sb = Province("arg1", 'arg2', 'arg3')
     print sd.Name //访问动态字段//对象可以访问表态字段
     print Province.memo//访问静态字段
+    sb.Thailand = false//引用可改私有字段
+    print sb.Thailand 和上一行对比，有点多态的意思
+
