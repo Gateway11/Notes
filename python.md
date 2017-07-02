@@ -156,11 +156,15 @@ print zip(x,y,z)以列输出
             self.Name = name
             self.Capital = capital
             self.Leader = leader
+            self.__thailand = leader//私有字段
 
         //静态方法，实例十个类，方法只有一份
         @staticmethod
         def Foo()://加python注解变成静态方法，还要去self参数
             print 'xxxx'
+
+        def __sha(self)://私有方法
+            print "xxxx"
 
     @property//属性注解，不知道有什么用
     sb = Province("arg1", 'arg2', 'arg3')
