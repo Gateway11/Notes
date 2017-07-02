@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+//http://www.cnblogs.com/wupeiqi/articles/4276448.html
 
 #### if
 
