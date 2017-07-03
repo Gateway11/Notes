@@ -174,6 +174,10 @@ print zip(x,y,z)以列输出
         def Thailand(self, value):
             self.__Thailand = value
 
+        @Show.setter
+        def show (self, value):
+            self.__private = value
+
     @property//属性注解，不知道有什么用
     sb = Province("arg1", 'arg2', 'arg3')
     print sd.Name //访问动态字段//对象可以访问表态字段
