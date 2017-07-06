@@ -12,6 +12,8 @@ brew安装
 adb remote; adb shell rm -rf system/priv-app/
 adb shell rm -rf /system/priv-app/...
 
+nc -vzw 2 apigwws.open.rokid.com 443  
+
 jdk1.8下载
     
     http://www.linuxfromscratch.org/blfs/view/svn/general/java.html
