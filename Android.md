@@ -16,6 +16,8 @@ public static Intent createExplicitFromImplicitIntent(Context context,Intent imp
     return explicitIntent;
 }
 
+ window->linkToDeath(static_cast<IBinder::DeathRecipient*>(this));  
+
 android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_FOREGROUND);
 android.os.Process.setCanSelfBackground(false);
 android.os.Looper.prepareMainLooper();
