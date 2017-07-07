@@ -17,6 +17,7 @@ public static Intent createExplicitFromImplicitIntent(Context context,Intent imp
 }
 
  window->linkToDeath(static_cast<IBinder::DeathRecipient*>(this));  
+ IPCThreadState::self()->getCallingPid()
 
 android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_FOREGROUND);
 android.os.Process.setCanSelfBackground(false);
