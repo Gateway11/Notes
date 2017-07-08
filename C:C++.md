@@ -6,6 +6,10 @@
     strchr 查找字符
     strstr 查找字符串
     strtok 分解字符串
+        p = strok(str, " ");
+        while(p = strtok(NULL, " ")){
+            printf("%s", p);
+        }
     strcmp
     strncmp
     strcat 拼接字符串
