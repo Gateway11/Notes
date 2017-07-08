@@ -3,7 +3,8 @@
 
     strlen 不计算\0
     sizeof 计算\0
-    strchr 查找字符串
+    strchr 查找字符
+    strstr 查找字符串
     strcmp
     strncmp
     strcat 拼接字符串
