@@ -5,6 +5,7 @@
     sizeof 计算\0
     strchr 查找字符
     strstr 查找字符串
+    strtok 分解字符串
     strcmp
     strncmp
     strcat 拼接字符串
