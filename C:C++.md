@@ -35,3 +35,7 @@
 	#else
 		#warning "adfadsfa"
 	#endif
+
+### struct  **四字节对齐**
+
+    struct stu a = {attr1, attr2, attr3}
