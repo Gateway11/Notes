@@ -10,6 +10,13 @@
         while(p = strtok(NULL, " ")){
             printf("%s", p);
         }
+    char* str = "hello world";   存放在只读区
+    char* str[2] = {"hello", "world"};存放在只读区
+    char str[][6] = {"hello", "world"};存放在栈区
+    char *p[10]     p+1加4个字节
+    char (*p)[20]   p+1加20个字节
+    typedef char* NEWTYPE  
+    define NEWTYPE char*  宏只是替换
     strcmp
     strncmp
     strcat 拼接字符串
