@@ -1,4 +1,5 @@
 [C/C++](www.cppreference.com)
+[C++源码](http://www.cplusplus.com/reference/)
 [GNU C](http://www.gnu.org/software/libc/manual/)
 
     strlen 不计算\0
