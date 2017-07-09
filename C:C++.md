@@ -79,3 +79,34 @@
         printf("%d\n", *(int *)((char*)&a + 4));
         return 0;
     }
+
+    **单例**
+    class A{
+        public:
+            static A* make();
+            static void release();
+        protected:
+            A();
+        private :
+            static A *p;
+    };
+    
+    A::A(){}
+    A *A::p = NULL;
+    A* A::make(){
+        if(!p){
+            p = new A;
+        }
+        return p;
+    }
+    void A::release(){
+        if(p){
+            delete p;
+            p = NULL;
+        }
+    }
+    int main(){
+        A *p = A::make();
+        A::release();
+        return 0;
+    }
