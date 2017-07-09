@@ -40,3 +40,42 @@
 ### struct  **四字节对齐**
 
     struct stu a = {attr1, attr2, attr3}
+
+### C++ 模板
+
+    template < class T>
+    T test(T a, T b){
+        return a + b;
+    }
+
+    const成员必须用初始化列表赋值
+    class A{
+        public:
+            const int i;
+            A:i(100){}
+            A(i = 100){} 缺省值
+            A(const A &it){//拷贝构造函数
+                i = it.i;
+            }
+    }
+    
+    **通过指针偏移来访问类的私有成员**
+    class A{
+        public:
+            int age = 10;
+        private :
+            int name = 9;
+    };
+    
+    A get(){
+        A a;
+        return a;
+    }
+    
+    int main(){
+        A a = get();
+        printf("%p\n", &a);
+        printf("%d\n", *(int*)&a);
+        printf("%d\n", *(int *)((char*)&a + 4));
+        return 0;
+    }
