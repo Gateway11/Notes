@@ -37,6 +37,23 @@
 		#warning "adfadsfa"
 	#endif
 
+### 可变参数
+    template<typename T>
+    void show_str(const T& value){
+        cout << value << "\n";
+    }
+
+    template<typename T, typename... Args>
+    void show_str(const T& value, const Args&... args){
+        cout << value << ", ";
+        show_str(args...);
+    }
+
+    int main(){
+        show_str(1, 3, "dafasd", "dsafasdfasdf", 3.4352435);
+        return 0;
+    }
+
 ### struct  **四字节对齐**
 
     struct stu a = {attr1, attr2, attr3}
