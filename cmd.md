@@ -46,6 +46,7 @@ USB
 
 sed命令：
 
+    sed -i s/NLPFilter/UIManager/g `grep NLPFilter -rl  ./`
     http://blog.chinaunix.net/uid-15007890-id-3236130.html  匹配行前后加入一行 
     sed -i '/synchronized/a\android.util.Log.e("DX","")' WindowManagerService.java
     删除指定字符下一行sed -i '/application/{n;d}' ./*/AndroidManifest.xml
