@@ -134,3 +134,17 @@
     const_cast  去掉const标签
     reinterpret_cast 不同类型指针之间转换
     dynamic_cast 字父类之间转换
+
+### using
+
+    template<class T> using ptr = T*; //模板的简写
+
+### 模板元(解决递归问题)
+    template<int N>
+    struct data
+    {
+        enum{res = data<N-1>::res+data<N-2>::res};
+    };
+    int main(void){
+        int num = data<45>::res;
+    }
