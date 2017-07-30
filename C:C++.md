@@ -127,3 +127,10 @@
         A::release();
         return 0;
     }
+
+### 类型转换
+
+    static_cast 基础数据转换
+    const_cast  去掉const标签
+    reinterpret_cast 不同类型指针之间转换
+    dynamic_cast 字父类之间转换
