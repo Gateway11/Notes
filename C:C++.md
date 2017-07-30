@@ -159,3 +159,16 @@
     int main(void){
         int num = data<45>::res;
     }
+
+### thread
+
+    incluce <thread>
+    auto n = thread::hardware_concurrency();  //获取系统系统个数
+
+    thread thread1(函数指针);
+    thread1.join();
+
+### 函数别名
+
+    myclass _myclass;
+    void(myclass::*_fun)() = &_myclass::fun;
