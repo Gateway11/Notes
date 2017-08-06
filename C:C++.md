@@ -181,3 +181,14 @@
     vector  数组，堆上，有序
     list    链表，有序(int a[] = {1,2,3,3,5};    list<int> lists(a, a+5);)
     set     红黑树，无序，自动排序，不可以有重复过犹元素
+    multiset红黑树中的每个元素是链表
+
+### 比较器
+    class strcmp{
+        public:
+            bool operator()(const string &str1, const string &str2){
+                return str1 < str2; 
+            }
+    }
+    string strs[] = {"hello", "world"};
+    set<int, strcmp> set(strs, strs + 2, strcmp());
