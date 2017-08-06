@@ -174,7 +174,7 @@
     void(myclass::*_fun)() = &_myclass::fun;
 
     mutabel  const的反义词
-    绑定函数包装器
+    bindlist绑定函数包装器
 
 ### STL容器
     array   数组，不可变长，栈上存储
