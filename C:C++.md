@@ -193,3 +193,10 @@
     }
     string strs[] = {"hello", "world"};
     set<int, strcmp> set(strs, strs + 2, strcmp());
+
+    class test{
+    public:
+        string str1;
+        string str2;
+    };
+    test tests[] = {{"hello", "llllllllll"},{"world", "nnnnnnnnnnn"}};//这种方式初始化一个类数组
