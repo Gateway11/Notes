@@ -182,7 +182,8 @@
     list    链表，有序(int a[] = {1,2,3,3,5};    list<int> lists(a, a+5);)
     set     红黑树，无序，自动排序，不可以有重复过犹元素
     multiset红黑树中的每个节点是链表
-    map     可以用[]遍历, 插入同一个key会覆盖
+    map     可以用[]遍历, 插入同一个key会覆盖,不需要比较器，自动去重
+    multimap可以添加重复元素
 
 ### 比较器
     class strcmp{
