@@ -177,11 +177,12 @@
     bindlist绑定函数包装器
 
 ### STL容器
-    array   数组，不可变长，栈上存储
-    vector  数组，堆上，有序
+    array   数组，不可变长，栈上存储,可以用[]遍历
+    vector  数组，堆上，有序,可以用[]遍历
     list    链表，有序(int a[] = {1,2,3,3,5};    list<int> lists(a, a+5);)
     set     红黑树，无序，自动排序，不可以有重复过犹元素
     multiset红黑树中的每个节点是链表
+    map     可以用[]遍历
 
 ### 比较器
     class strcmp{
