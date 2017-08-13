@@ -212,3 +212,12 @@ C/C++](www.cppreference.com)
     [capture_block](parameters) mutable exception_specification->return_type{body }
     int a;
     [=/this/&a/&/a, this](double b)mutable->decltype(a+b){return a + b}(2.3);
+
+### STL <algorithm> 
+    for_each 遍历
+    sort     排序
+    random_shuffle  乱序
+    fill     初始化,类似memset
+    partition 交换
+    count    统计
+    adjacent_find   查找第一组相同的元素(1, 2, 5, 6, 9, 4, 2, 5  输出2)
