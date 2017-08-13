@@ -207,3 +207,7 @@
         string str2;
     };
     test tests[] = {{"hello", "llllllllll"},{"world", "nnnnnnnnnnn"}};//这种方式初始化一个类数组
+
+### 拉姆达表达式
+    int a;
+    [=/this/&a/&/&&](double b)mutable->decltype(a+b){return a + b}(2.3);
