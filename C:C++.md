@@ -216,8 +216,11 @@ C/C++](www.cppreference.com)
 ### STL <algorithm> 
     for_each 遍历
     sort     排序
+    partial_sort
     random_shuffle  乱序
     fill     初始化,类似memset
     partition 交换
     count    统计
     adjacent_find   查找第一组相同的元素(1, 2, 5, 6, 9, 4, 2, 5  输出2)
+    rotate  旋转
+    prev_permutation    对不组数据进行不同组合
