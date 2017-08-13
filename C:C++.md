@@ -224,3 +224,5 @@ C/C++](www.cppreference.com)
     adjacent_find   查找第一组相同的元素(1, 2, 5, 6, 9, 4, 2, 5  输出2)
     rotate  旋转
     prev_permutation    对不组数据进行不同组合
+
+### 差值排序
