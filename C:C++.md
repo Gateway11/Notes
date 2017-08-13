@@ -1,4 +1,4 @@
-[C/C++](www.cppreference.com)
+C/C++](www.cppreference.com)
 [C++源码](http://www.cplusplus.com/reference/)
 [GNU C](http://www.gnu.org/software/libc/manual/)
 
@@ -210,4 +210,4 @@
 
 ### 拉姆达表达式
     int a;
-    [=/this/&a/&/&&](double b)mutable->decltype(a+b){return a + b}(2.3);
+    [=/this/&a/&/a, this](double b)mutable->decltype(a+b){return a + b}(2.3);
