@@ -208,6 +208,6 @@ C/C++](www.cppreference.com)
     };
     test tests[] = {{"hello", "llllllllll"},{"world", "nnnnnnnnnnn"}};//这种方式初始化一个类数组
 
-### 拉姆达表达式
+### 拉姆达表达式http://blog.csdn.net/xuexiacm/article/details/39835085
     int a;
     [=/this/&a/&/a, this](double b)mutable->decltype(a+b){return a + b}(2.3);
