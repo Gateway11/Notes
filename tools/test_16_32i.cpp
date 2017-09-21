@@ -15,8 +15,9 @@ int main(){
     char *buff = new char[MAX_SIZE];
     int *buff_32 = new int[MAX_SIZE / 2];
 
+    umask(0);
     if((in = open("/Users/daixiang/Downloads/6+1_16k_16bit.pcm", O_RDONLY)) > 0
-            && (out = open("/Users/daixiang/Downloads/32bit.pcm", O_WRONLY|O_TRUNC)) > 0){
+            && (out = open("/Users/daixiang/Downloads/32bit.pcm", O_CREAT | O_TRUNC | O_WRONLY, 0777)) > 0){
 
         while((temp = read(in, buff, MAX_SIZE)) > 0){
             short *buff_16 = (short *)buff;
