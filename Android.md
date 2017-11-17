@@ -42,3 +42,8 @@ public class MyApp extends Application {
 }
 
      android:persistent="true"
+
+/build/target/product/security/platform.pk8 
+/build/target/product/security/platform.x509.pem
+~/bin/adk/build-tools/27.0.1/apksigner sign --key build/security/platform.pk8 --cert build/security/platform.x509.pem out/target/23/farfield/RKBearKid.apk
+~/bin/adk/build-tools/27.0.1/jarsigner sign --key build/security/platform.pk8 --cert build/security/platform.x509.pem out/target/23/farfield/RKBearKid.apk
