@@ -1,4 +1,9 @@
 <!-- vim-markdown-toc GFM -->
+
+setprop service.adb.tcp.port 5555
+stop adbd
+start adbd
+
 * [基本用法](#基本用法)
     * [命令语法](#命令语法)
     * [为命令指定目标设备](#为命令指定目标设备)
